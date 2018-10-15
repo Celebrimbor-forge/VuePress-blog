@@ -7,7 +7,7 @@
         
         <p>{{ post.frontmatter.description }}</p>
 
-        <p><router-link :to="post.path">Read more</router-link></p>
+        <p><router-link :to="post.path">Continue reading&hellip;</router-link></p>
     </div>
 </div>
 </template>
