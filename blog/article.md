@@ -8,6 +8,9 @@ description:
 # Making a simple blog using VuePress
 
 ---
+## Table of contents
+
+[[toc]]
 
 Making a simple blog using VuePress
 I've always had problems adopting new technologies and frameworks without seeing a simple tutorial of the basics. Now that I'm slowly working with more and more open source projects I thought it was about time I started giving back to the community.
