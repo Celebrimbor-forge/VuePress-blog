@@ -1,3 +1,9 @@
 module.exports = {
-    title: 'VuePress tutorial'
+    title: 'VuePress tutorial',
+    themeConfig: {
+        nav: [
+            { text: 'Home', link: '/' },
+            { text: 'Blog', link: '/blog/' }
+        ]
+    }
 }
