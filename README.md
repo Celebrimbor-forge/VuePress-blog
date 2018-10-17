@@ -1,5 +1,6 @@
 # VUEPress blog
 Making a blog website using VuePress, this will be that basis for a Medium tutorial.
+If you wan't to be a part of the tutorial, add a new blog post to the repo and structure it as a tutorial. Then make a pull request and I will review the article.
 
 ## Samuel L. Ipsum
 
