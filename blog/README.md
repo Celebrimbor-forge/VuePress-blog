@@ -4,6 +4,6 @@ blog_index: true
 
 # Blog
 
-Welcome on Outreach shame blog
+Welcome on Vuepress tutorial blog
 
 <BlogIndex />
