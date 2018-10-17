@@ -4,6 +4,6 @@ blog_index: true
 
 # Blog
 
-Welcome on Vuepress tutorial blog
+Welcome on VuePress tutorial blog
 
 <BlogIndex />
