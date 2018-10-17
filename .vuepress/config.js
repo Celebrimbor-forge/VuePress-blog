@@ -5,5 +5,8 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: 'Blog', link: '/blog/' }
         ]
+    },
+    markdown: {
+        lineNumbers: true
     }
 }

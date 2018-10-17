@@ -8,13 +8,16 @@ description:
 # Making a simple blog using VuePress
 
 ---
+## Table of contents
+
+[[toc]]
 
 Making a simple blog using VuePress
 I've always had problems adopting new technologies and frameworks without seeing a simple tutorial of the basics. Now that I'm slowly working with more and more open source projects I thought it was about time I started giving back to the community.
 
 I've gotten extremely frustrated with poor documentation and I'm sure most developers are in the same boat with me. Poor documentation is a plague and it spreads because developers have deadlines they have to make and usually projects have problems and the deadline can already be seen around the corner. Solution? Cut testing! As long as our code is bug free it's just wasted time right? Often this is still not enought and the developer would rather use the time for something else. So the solution becomes: Rush through writing documentation.
 
-Vue.js is one of the best documentated frameworks I have ever seen…this might be one of the main reasons I love using it. How do I get the same kind of documentation that Vue.js has, you might ask. I'd start with using the same tools, VuePress. VuePress was made by the creator of Vue.js, Evan You to make the documentation of Vue.js less painful.
+Vue.js is one of the best documentated frameworks I have ever seen…this might be one of the main reasons I love using it. So how would you be able to get the same kind of documentation that Vue.js has? I'd start with using the same tools, VuePress. VuePress was made by the creator of Vue.js, Evan You to make the documentation of Vue.js less painful.
 
 
 ---
@@ -28,7 +31,7 @@ Things needed before starting:
 - A proper text editor helps
 
 ## Installing VuePress
-You have your NPM installed and your terminal open? Great! All you need to do to install VuePress is a simple:
+Do you have your NPM installed and your terminal open? Great! All you need to do to install VuePress is a simple:
 npm i -g vuepress
 
 ## Making the site
@@ -45,10 +48,10 @@ The path of the righteous man is beset on all sides by the iniquities of the sel
 ```
 
 Once you have your README.md full of text then you can run vuepress dev then open up http://localhost:8080 on your browser and see the extremely clean looking default theme for VuePress.
-You should be seeing thisThat was easy, but you'd probably like to have something more than just a single page of plain text right? Let's do just that!
+You should be seeing thisThat was easy, but you'd probably like to have something more than just a single page of plain text, right? Let's do just that!
 
 ## Adding a title
-First we need to create a folder called .vuepress and add a configuration file named config.js . This file is used for customizing the website. It's a JavaScript file that should export a JSON object. There are plenty of stuff you can change with the config.js, but we will just focus on a few so you get a basic idea on what you can do with VuePress. For full set of arguments, check the documentation.
+First we need to create a folder called .vuepress and add a configuration file named config.js . This file is used for customizing the website. It's a JavaScript file that should export a JSON object. There are plenty of things you can change with the config.js, but we will just focus on a few so you get a basic idea on what you can do with VuePress. For full set of arguments, check the documentation.
 Let's add a title:
 
 ```
@@ -58,7 +61,7 @@ module.exports = {
 }
 ```
 
-You should see the title appear in the left side of the navbar. Easy right?
+You should see the title appear in the left side of the navbar. Pretty easy, right?
 
 ## Making a list of blog posts
 Now let's add a blog! With custom Vue components, adding a blog is pretty easy. Let's make a custom Vue component that renders a list of blog posts.
@@ -98,7 +101,7 @@ export default {
 That's the code. Now let's take a closer look on what's happening in there!
 The template is fairly basic. The VuePress components use a single-file component pattern.
 Let's start from the top. We have the html-template that renders posts in the computed property named posts with the v-for loop. The computed posts() gets all the blog posts from the site pages. The blog posts will have some required front matter information, like a title. The date shall also be required so we can sort the posts and have the newest one appear first.
-Another noteworthy thing are the two properties that VuePress comes ready with: this.$site which gives you meta data of the website (each page included) and this.$page which gives you information about the current page.
+Some other noteworthy things include the two properties that VuePress comes ready with: this.$site which gives you meta data of the website (each page included) and this.$page which gives you information about the current page.
 The component is ready, now we'll add some content!
 
 ## Content to the blog!
